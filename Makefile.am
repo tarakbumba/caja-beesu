@@ -1,0 +1,4 @@
+DISTCLEANFILES = *~
+
+SUBDIRS = caja-beesu po
+DIST_SUBDIRS = $(SUBDIRS)

@@ -1,0 +1,306 @@
+# Japanese translation for beesu.
+# Copyright (C) 2008 Debian MATE Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+# This file is distributed under the same license as the beesu package.
+# fujiwara <takao.fujiwara@sun.com>, 2008
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: beesu \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-05-08 11:30+0000\n"
+"PO-Revision-Date: 2008-10-23 13:11+0000\n"
+"Last-Translator: Hideki Yamane (Debian-JP) <henrich@debian.or.jp>\n"
+"Language-Team: debian-japanese@lists.debian.or.jp\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2008-10-22 14:04+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../beesu/beesu.c:76
+#, c-format
+msgid ""
+"BEEsu version %s\n"
+"\n"
+msgstr ""
+"BEEsu バージョン %s\n"
+"\n"
+
+#: ../beesu/beesu.c:77
+#, c-format
+msgid ""
+"Usage: %s [-u <user>] [options] <command>\n"
+"\n"
+msgstr ""
+"使い方: %s [-u <ユーザー名>] [オプション] <コマンド>\n"
+"\n"
+
+#: ../beesu/beesu.c:78
+msgid ""
+"  --debug, -d\n"
+"    Print information on the screen that might be\n"
+"    useful for diagnosing and/or solving problems.\n"
+msgstr ""
+"  --debug, -d\n"
+"    問題の原因の究明ないし解決に役立つ情報を\n"
+"    画面に表示します。\n"
+
+#: ../beesu/beesu.c:81 ../beesu/beesu.c:84 ../beesu/beesu.c:100 ../beesu/beesu.c:111
+#: ../beesu/beesu.c:117
+msgid "\n"
+msgstr "\n"
+
+#: ../beesu/beesu.c:82
+msgid ""
+"  --user <user>, -u <user>\n"
+"    Call <command> as the specified user.\n"
+msgstr ""
+"  --user <ユーザー名>, -u <ユーザー名>\n"
+"    指定したユーザーで <コマンド> を実行します\n"
+
+#: ../beesu/beesu.c:85
+msgid ""
+"  --disable-grab, -g\n"
+"    Disable the \"locking\" of the keyboard, mouse,\n"
+"    and focus done by the program when asking for\n"
+"    password.\n"
+msgstr ""
+"  --disable-grab, -g\n"
+"    パスワードを尋ねる際に、プログラムによる\n"
+"    キーボード、マウス、およびフォーカスの「ロック」を\n"
+"    無効にします。\n"
+
+#: ../beesu/beesu.c:89
+msgid ""
+"  --prompt, -P\n"
+"    Ask the user if they want to have their keyboard\n"
+"    and mouse grabbed before doing so.\n"
+msgstr ""
+"  --prompt, -P\n"
+"    キーボードとマウスを捕捉する前に、ユーザーに確認する。\n"
+
+#: ../beesu/beesu.c:92
+msgid ""
+"  --preserve-env, -k\n"
+"    Preserve the current environments, does not set $HOME\n"
+"    nor $PATH, for example.\n"
+msgstr ""
+"  --preserve-env, -k\n"
+"    環境変数を変更しない。例えば $HOME や $PATH を\n"
+"    設定しない。\n"
+
+#: ../beesu/beesu.c:95
+msgid ""
+"  --login, -l\n"
+"    Make this a login shell. Beware this may cause\n"
+"    problems with the Xauthority magic. Run xhost\n"
+"    to allow the target user to open windows on your\n"
+"    display!\n"
+msgstr ""
+"  --login, -l\n"
+"    ログインシェルにする。これは Xauthority による認証に\n"
+"    問題を起こすかもしれないことに注意してください。対象\n"
+"    ユーザーがあなたのディスプレイでウィンドウを開くこと\n"
+"    を許可するには xhost を実行してください!\n"
+
+#: ../beesu/beesu.c:101
+msgid ""
+"  --description <description|file>, -D <description|file>\n"
+"    Provide a descriptive name for the command to\n"
+"    be used in the default message, making it nicer.\n"
+"    You can also provide the absolute path for a\n"
+"    .desktop file. The Name key for will be used in\n"
+"    this case.\n"
+msgstr ""
+"  --description <説明|ファイル>, -D <説明|ファイル>\n"
+"    よりわかりやすいように、デフォルトメッセージとして\n"
+"    使われるコマンドの説明を指定します。\n"
+"    .desktop ファイルの絶対パスを指定することも出来ます。\n"
+"    この時、Name キーが説明として使われます。\n"
+
+#: ../beesu/beesu.c:107
+msgid ""
+"  --message <message>, -m <message>\n"
+"    Replace the standard message shown to ask for\n"
+"    password for the argument passed to the option.\n"
+"    Only use this if --description does not suffice.\n"
+msgstr ""
+"  --message <メッセージ>, -m <メッセージ>\n"
+"    パスワードを尋ねるときに出てくる標準のメッセージを\n"
+"    オプションに渡された引数で置き換えます。\n"
+"    --description では不十分な時のみ使ってください。\n"
+
+#: ../beesu/beesu.c:112
+msgid ""
+"  --print-pass, -p\n"
+"    Ask beesu to print the password to stdout, just\n"
+"    like ssh-askpass. Useful to use in scripts with\n"
+"    programs that accept receiving the password on\n"
+"    stdin.\n"
+msgstr ""
+"  --print-pass, -p\n"
+"    ssh-askpass のように、beesu がパスワードを標準出力に\n"
+"    出すようにします。パスワードを標準入力から受け付ける\n"
+"    プログラムをスクリプトで使うときに便利です。\n"
+
+#: ../beesu/beesu.c:118
+msgid ""
+"  --sudo-mode, -S\n"
+"    Make GKSu use sudo instead of su, as if it had been\n"
+"    run as \"beesudo\".\n"
+msgstr ""
+"  --sudo-mode, -S\n"
+"    beesudo として実行されたかのように、beesu が\n"
+"    su の代わりにsudo を使うようにします。\n"
+
+#: ../beesu/beesu.c:121
+msgid ""
+"  --su-mode, -w\n"
+"    Make GKSu use su, instead of using libbeesu's\n"
+"    default.\n"
+msgstr ""
+"  --su-mode, -w\n"
+"    libbeesu のデフォルトを使用する代わりに、\n"
+"    beesu が su を使うようにします。\n"
+
+#: ../beesu/beesu.c:124
+msgid ""
+"  --always-ask-pass\n"
+"    Make GKSu always ask for a password, even if it is cached\n"
+"    by sudo.\n"
+msgstr ""
+"  --always-ask-pass\n"
+"    sudo がパスワードをキャッシュしていても、\n"
+"    beesu が常にパスワードを尋ねるようにします。\n"
+
+#: ../beesu/beesu.c:235
+msgid "Advanced options"
+msgstr "拡張オプション"
+
+#: ../beesu/beesu.c:251
+msgid "<b>Options to use when changing user</b>"
+msgstr "<b>ユーザ変更時に使用するオプション</b>"
+
+#. login shell? (--login)
+#: ../beesu/beesu.c:256
+msgid "_login shell"
+msgstr "ログインシェル(_L)"
+
+#: ../beesu/beesu.c:264
+msgid "_preserve environment"
+msgstr "環境変数を変更しない(_P)"
+
+#: ../beesu/beesu.c:365
+msgid "Run program"
+msgstr "プログラムの実行"
+
+#. command
+#: ../beesu/beesu.c:384
+msgid "Run:"
+msgstr "実行:"
+
+#. user name
+#: ../beesu/beesu.c:395
+msgid "As user:"
+msgstr "ユーザの指定:"
+
+#. advanced button
+#: ../beesu/beesu.c:412
+msgid "_Advanced"
+msgstr "詳細(_A)"
+
+#: ../beesu/beesu.c:448 ../beesu/beesu.c:730
+msgid "Missing command to run."
+msgstr "実行するコマンドがありません。"
+
+#: ../beesu/beesu.c:609
+#, c-format
+msgid "Option not accepted for --disable-grab: %s\n"
+msgstr "--disable-grab にオプションはありません: %s\n"
+
+#: ../beesu/beesu.c:644
+#, c-format
+msgid "Option not accepted for --prompt: %s\n"
+msgstr "--prompt にオプションはありません: %s\n"
+
+#: ../beesu/beesu.c:670
+msgid ""
+"<b>Would you like your screen to be \"grabbed\"\n"
+"while you enter the password?</b>\n"
+"\n"
+"This means all applications will be paused to avoid\n"
+"the eavesdropping of your password by a a malicious\n"
+"application while you type it."
+msgstr ""
+"<b>パスワードを入力する時、画面を \"捕捉する\" ようにしますか？</b>\n"
+"\n"
+"これにより、あらゆるアプリケーションを停止することで、悪意ある\n"
+"アプリケーションがあなたのキー入力を盗みとることを防ぎます。"
+
+#: ../beesu/beesu.c:694
+msgid ""
+"<big><b>Missing options or arguments</b></big>\n"
+"\n"
+"You need to provide --description or --message."
+msgstr ""
+"<big><b>オプションまたは引数が足りません</b></big>\n"
+"\n"
+"--description か --message を与える必要があります。"
+
+#: ../beesu/beesu.c:704
+#, c-format
+msgid ""
+"<b>Failed to request password.</b>\n"
+"\n"
+"%s"
+msgstr ""
+"<b>パスワードの要求に失敗しました。</b>\n"
+"\n"
+"%s"
+
+#: ../beesu/beesu.c:778
+#, c-format
+msgid "User %s does not exist."
+msgstr "ユーザ %s は存在しません。"
+
+#: ../beesu/beesu.c:798
+msgid "<b>Incorrect password... try again.</b>"
+msgstr "<b>パスワードが違います...もう一度入力してください。</b>"
+
+#: ../beesu/beesu.c:834
+#, c-format
+msgid ""
+"<b>Failed to run %s as user %s.</b>\n"
+"\n"
+"%s"
+msgstr ""
+"<b>%s を、ユーザ %s として実行できませんでした。</b>\n"
+"\n"
+"%s"
+
+#: ../beesu.desktop.in.h:1
+msgid "Opens a terminal as the root user, using beesu to ask for the password"
+msgstr "パスワードを尋ねるのに beesu を使い、root ユーザとして端末を開く"
+
+#: ../beesu.desktop.in.h:2
+msgid "Root Terminal"
+msgstr "システムターミナル・スーパーユーザーモード"
+
+#: ../caja-beesu/libcaja-beesu.c:136
+msgid "Open as administrator"
+msgstr "管理者として開く"
+
+#: ../caja-beesu/libcaja-beesu.c:137
+msgid "Opens the file with administrator privileges"
+msgstr "管理者権限でファイルを開く"
+
+#: ../caja-beesu/libcaja-beesu.c:230
+msgid ""
+"<big><b>Unable to determine the program to run.</b></big>\n"
+"\n"
+"The item you selected cannot be open with administrator powers because the "
+"correct application cannot be determined."
+msgstr ""
+"<big><b>実行するプログラムを決定できません。</b></big>\n"
+"\n"
+"適切なアプリケーションを決定できないので、選んだファイルを管理者権限で開くことはできません。"
